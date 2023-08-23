@@ -1,0 +1,27 @@
+Python:
+https://docs.python.org/3/library/index.html
+->Python é uma boa ferramenta no desenvolvimento web, pois ajuda a construir sites e aplicativos e principalmente lidar com o que os usuários 
+pedem, gerenciar informações e demonstrar mudanças de forma dinâmica.
+
+Git:
+https://git-scm.com/docs
+->Git é bem importante para qualquer projeto web, pois permite o compartilhamento eficiente do código entre desenvolvedores atraves de sites 
+como github.
+
+VsCode:
+https://code.visualstudio.com/docs
+->VsCode é um IDE que tem muitos recursos no desenvolvimento web, pois permite compilar quase todas as linguagens de código em um lugar só. 
+Além de ter muitos atalhos e extensões extremamente úteis.
+
+Chrome:
+https://developer.chrome.com/docs/
+->*Como os outros browsers é uma fonte importante para pesquisa de conteúdos de desenvolvimento, 
+e também são onde os projetos web são rodados e testados.
+
+Mozilla:
+https://developer.mozilla.org/en-US/docs/Mozilla/Firefox
+->*
+
+Edge:
+https://learn.microsoft.com/en-us/microsoft-edge/
+->*
