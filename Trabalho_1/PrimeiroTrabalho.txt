@@ -1,7 +1,7 @@
 Python:
 https://docs.python.org/3/library/index.html
 ->Python é uma boa ferramenta no desenvolvimento web, pois ajuda a construir sites e aplicativos e principalmente lidar com o que os usuários 
-pedem, gerenciar informações e demonstrar mudanças de forma dinâmica.
+pedem, gerenciar informações e demonstrar mudanças de forma dinâ.
 
 Git:
 https://git-scm.com/docs
