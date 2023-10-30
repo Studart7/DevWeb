@@ -1,6 +1,19 @@
 //const ingrid = atletas[0];
 
 const body = document.body;
+
+const pesquisa = document.createElement('div');
+const texto_pesquisado = document.createElement('input');
+const btn_pesquisar = document.createElement('button');
+pesquisa.style.textAlign = 'center';
+
+btn_pesquisar.innerHTML = 'Pesquisar';
+btn_pesquisar.onclick = () => {filtrar(texto_pesquisado.value)};
+
+pesquisa.appendChild(texto_pesquisado);
+pesquisa.appendChild(btn_pesquisar);
+body.appendChild(pesquisa);
+
 const div_container = document.createElement('div');
 div_container.id = 'container';
 body.appendChild(div_container);
@@ -28,6 +41,28 @@ const cria_cartao = (entrada) => {
 }
 
 
+const constroi_atletas = (list_atletas) => {
+    div_container.innerHTML = ' ';
+    list_atletas.forEach((atleta) => {
+        cria_cartao(atleta);
+    });
+}
+
+const filtrar = (entrada) => {
+    const filtrado = atletas.filter( 
+        (ele) => ele.nome.toLowerCase().includes(entrada.toLowerCase())
+    );
+    constroi_atletas(filtrado);
+}
+
+constroi_atletas(filtrado);
+
+
+
+
+
+
+
 //atletas.forEach((atleta) => {cria_cartao(atleta)});
 
 /*
@@ -46,23 +81,6 @@ while (indice < atletas.length){
 }
 */
 
-const constroi_atletas = (list_atletas) => {
-    for (const atleta of list_atletas){
-        cria_cartao(atleta);
-    }
-}
-
-const filtrado = atletas.filter( 
-    (ele) => {
-        const nome = ele.nome;
-        const nome_minisculas = nome.toLowerCase();
-        const resultado = nome_minisculas.includes("y");
-        return resultado;
-    }
-)
-
-
-constroi_atletas(filtrado);
 
 /*
 for (const atleta of atletas){
@@ -70,13 +88,6 @@ for (const atleta of atletas){
     console.log('loop for of', atleta.id);
 }
 */
-
-
-
-
-
-
-
 
 
 /*
@@ -88,3 +99,22 @@ const preenche = (atleta) => {
 
 preenche(atletas[3]);
 */  
+
+/*
+const filtrado = atletas.filter( 
+    (ele) => {
+        const nome = ele.nome;
+        const nome_minisculas = nome.toLowerCase();
+        const resultado = nome_minisculas.includes("i");
+        return resultado;
+    }
+)
+*/
+
+/*
+const constroi_atletas = (list_atletas) => {
+    div_container.innerHTML = ' ';
+    for (const atleta of list_atletas){
+        cria_cartao(atleta);
+    }
+} */
