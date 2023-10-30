@@ -46,10 +46,38 @@ while (indice < atletas.length){
 }
 */
 
+const constroi_atletas = (list_atletas) => {
+    for (const atleta of list_atletas){
+        cria_cartao(atleta);
+    }
+}
+
+const filtrado = atletas.filter( 
+    (ele) => {
+        const nome = ele.nome;
+        const nome_minisculas = nome.toLowerCase();
+        const resultado = nome_minisculas.includes("y");
+        return resultado;
+    }
+)
+
+
+constroi_atletas(filtrado);
+
+/*
 for (const atleta of atletas){
     cria_cartao(atleta);
     console.log('loop for of', atleta.id);
 }
+*/
+
+
+
+
+
+
+
+
 
 /*
 const preenche = (atleta) => {
