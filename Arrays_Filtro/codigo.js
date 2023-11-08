@@ -57,4 +57,3 @@ const filtrar = (entrada) => {
 }
 
 constroi_atletas(atletas);  
-
